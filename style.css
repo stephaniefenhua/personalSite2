@@ -51,9 +51,9 @@ body {
   font-family: "Inter", sans-serif;
   /* Gradient */
   background: linear-gradient(
-    rgba(255, 203, 235, 0.5) 19.24%,
+    rgba(255, 203, 235, 0.7) 19.24%,
     rgba(209, 205, 255, 0.5) 40.6%,
-    rgba(179, 227, 255, 0.5) 58.49%
+    rgba(179, 227, 255, 0.7) 58.49%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -206,6 +206,19 @@ h2 {
 }
 
 .company-titles {
-  color: #4CB5F0;
+  color: #2fb0fa;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .body-paragraph {
+    font-size: 1rem;
+  }
+  
+  .main-text {
+    margin-right: 5%;
+  }
 }
