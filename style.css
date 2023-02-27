@@ -94,7 +94,19 @@ body {
   padding: 1rem 0 0.75rem 0;
   width: 100%;
   flex-wrap: wrap;
-  border-top: 4px solid #fff;
+  border-top: 4px solid #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #22a8f5;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #028fe0;
+  transition: 0.2s;
 }
 
 .footer a:not(.btn--remix):link,
@@ -103,7 +115,6 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #000;
   text-decoration: none;
   border-style: none;
 }
@@ -231,4 +242,5 @@ h2 {
   position: absolute;
   opacity: 0.6;
 }
+
 
