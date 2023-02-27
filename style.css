@@ -51,9 +51,9 @@ body {
   font-family: "Inter", sans-serif;
   /* Gradient */
   background: linear-gradient(
-    rgba(255, 203, 235, 0.8) 19.24%,
-    rgba(209, 205, 255, 0.8) 40.6%,
-    rgba(179, 227, 255, 0.8) 58.49%
+    rgba(255, 203, 235, 0.6) 19.24%,
+    rgba(209, 205, 255, 0.6) 40.6%,
+    rgba(179, 227, 255, 0.6) 58.49%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,12 +208,12 @@ h2 {
 
 .company-titles {
   color: #22a8f5;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 768px) {
   .title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .body-paragraph {
     font-size: 1rem;
