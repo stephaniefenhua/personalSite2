@@ -20,6 +20,7 @@ body {
     rgba(179, 227, 255, 0.6) 58.49%
   );
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 /* Navigation grid */
@@ -71,7 +72,7 @@ a:hover {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-align: left;
   color: #789eff;
   margin-bottom: 0;
@@ -89,15 +90,14 @@ input {
   transition: 500ms;
 }
 
-
 .main-text {
   margin-left: 5%;
-  margin-right: 20%;
+  margin-right: 5%;
   z-index: 2
 }
 
 .body-paragraph {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   font-style: normal;
   color: #4679fb;
@@ -108,16 +108,29 @@ input {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
   .title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   .body-paragraph {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .main-text {
-    margin-right: 5%;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .body-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .main-text {
+    margin-right: 20%;
   }
 }
 
