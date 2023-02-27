@@ -109,15 +109,7 @@ a:hover {
   transition: 0.2s;
 }
 
-.footer a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-style: none;
-}
+
 .footer a:hover {
   background: var(--color-primary);
 }
@@ -222,6 +214,7 @@ h2 {
   font-weight: 500;
 }
 
+
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 2.2rem;
@@ -234,6 +227,7 @@ h2 {
     margin-right: 5%;
   }
 }
+
 
 .background-image {
   max-width: 100%;
