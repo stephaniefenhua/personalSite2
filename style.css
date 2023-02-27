@@ -51,9 +51,9 @@ body {
   font-family: "Inter", sans-serif;
   /* Gradient */
   background: linear-gradient(
-    rgba(255, 203, 235, 0.8) 19.24%,
-    rgba(209, 205, 255, 0.8) 40.6%,
-    rgba(179, 227, 255, 0.8) 58.49%
+    rgba(255, 203, 235, 0.5) 19.24%,
+    rgba(209, 205, 255, 0.5) 40.6%,
+    rgba(179, 227, 255, 0.5) 58.49%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -145,6 +145,8 @@ END Glitch hello-app default styles
   font-weight: bold;
   font-size: 3rem;
   text-align: left;
+  color: #789EFF;
+  margin-bottom: 0;
 }
 
 /* Very light scaling for our illustration */
@@ -200,4 +202,10 @@ h2 {
   font-weight: 400;
   font-style: normal;
   color: #648FFF;
+  line-height: 1.7rem;
+}
+
+.company-titles {
+  color: #4CB5F0;
+  font-weight: 600;
 }
