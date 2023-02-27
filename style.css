@@ -117,6 +117,7 @@ input {
 .main-text {
   margin-left: 5%;
   margin-right: 20%;
+  z-index: 2
 }
 
 .body-paragraph {
@@ -151,12 +152,6 @@ input {
   margin: 0;
   position: absolute;
   opacity: 0.6;
+  z-index: auto;
 }
 
-.background-image a:before {
-  [...]
-  -ms-transform: translate(0, -50%);
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  top: 50%;
-}
