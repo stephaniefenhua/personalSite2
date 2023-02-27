@@ -22,8 +22,8 @@ to this section's matching END comment to see page-specific styles.
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: 'Inter';
+  --font-family-header: 'Inter';
 }
 
 /* Basic page style resets */
@@ -45,6 +45,10 @@ to this section's matching END comment to see page-specific styles.
   font-weight: bold;
   src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
     format("opentype");
+}
+
+body {
+  font-family: 'Inter', sans-serif;
 }
 
 /* Our remix on glitch button */
@@ -86,7 +90,7 @@ to this section's matching END comment to see page-specific styles.
 
 .footer a:not(.btn--remix):link,
 a:not(.btn--remix):visited {
-  font-family: HK Grotesk;
+  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
@@ -110,9 +114,6 @@ a:not(.btn--remix):visited {
 END Glitch hello-app default styles
 ******************************************************************************/
 
-body {
-  font-family: 'Inter', sans-serif;
-}
 
 /* Page structure */
 .wrapper {
@@ -131,7 +132,7 @@ body {
 /* Very light scaling for our illustration */
 .title {
   color: #2800FF;
-  font-family: HK Grotesk;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
