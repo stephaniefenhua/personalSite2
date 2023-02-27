@@ -47,9 +47,13 @@ to this section's matching END comment to see page-specific styles.
     format("opentype");
 }
 
-body {
+html, body {
   font-family: 'Inter', sans-serif;
+  /* Gradient */
+  background: linear-gradient(rgba(255, 203, 235, 0.8) 19.24%, rgba(209, 205, 255, 0.8) 40.6%, rgba(179, 227, 255, 0.8) 58.49%);
 }
+
+
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -135,6 +139,7 @@ END Glitch hello-app default styles
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
+  text-align: left;
 }
 
 /* Very light scaling for our illustration */
@@ -181,5 +186,5 @@ h2 {
 }
 
 .main-text {
-  margin-right: 30%;
+  margin-right: 20%;
 }
