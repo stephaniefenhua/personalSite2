@@ -112,10 +112,6 @@ input {
   .title {
     font-size: 2.5rem;
   }
-  .body-paragraph {
-    font-size: 1.2rem;
-  }
-
   .main-text {
     margin-right: 20%;
   }
@@ -127,10 +123,7 @@ input {
   }
   .body-paragraph {
     font-size: 1.2rem;
-  }
-
-  .main-text {
-    margin-right: 20%;
+    line-height: 150%;
   }
 }
 
