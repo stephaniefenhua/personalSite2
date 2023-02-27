@@ -18,7 +18,7 @@ to this section's matching END comment to see page-specific styles.
   --color-bg: #69f7be;
   --color-text-main: #000000;
   --color-primary: #ffff00;
-  --wrapper-height: 87vh;
+  --wrapper-height: 100vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
   --font-family: "Inter";
@@ -143,7 +143,7 @@ END Glitch hello-app default styles
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: left;
 }
 
@@ -193,4 +193,11 @@ h2 {
 .main-text {
   margin-left: 5%;
   margin-right: 20%;
+}
+
+.body-paragraph {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #648FFF;
 }
