@@ -131,13 +131,10 @@ END Glitch hello-app default styles
 
 /* Very light scaling for our illustration */
 .title {
-  color: #2800FF;
   font-family: 'Inter';
   font-style: normal;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 105%;
-  margin: 0;
+  font-size: 2rem;
 }
 
 /* Very light scaling for our illustration */
@@ -181,4 +178,8 @@ h2 {
 */
 .dipped {
   transform: translateY(5px);
+}
+
+.main-text {
+  margin-right: 30%;
 }
