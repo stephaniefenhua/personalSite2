@@ -52,7 +52,7 @@ body {
   /* Gradient */
   background: linear-gradient(
     rgba(255, 203, 235, 0.6) 19.24%,
-    rgba(209, 205, 255, 0.6) 40.6%,
+    rgba(209, 205, 255, 0.4) 40.6%,
     rgba(179, 227, 255, 0.6) 58.49%
   );
   background-size: cover;
