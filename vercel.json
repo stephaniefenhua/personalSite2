@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://github.com/stephaniefenhua/resume/blob/main/StephanieSu-Resume.pdf",
+      "permanent": true
+    }
+  ]
+}
