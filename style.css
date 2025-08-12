@@ -1,24 +1,32 @@
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #69f7be;
-  --color-text-main: #000000;
-  --color-primary: #ffff00;
+  --color-off-white: #e0efe5;
+  --color-light-green: #abe2c6;
+  --color-medium-green: #218c4d;
+  --color-dark-green: #0e6d36;
+  --color-bg: var(--color-off-white);
+  --color-text-title: var(--color-medium-green); /* light green */
+  --color-text-body: var(--color-medium-green); /* medium green */
+  --color-text-name: var(--color-dark-green); /* dark green */
+  --color-text-link: var(--color-medium-green);
+  --color-text-link-hover: var(--color-dark-green);
   --wrapper-height: 100vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
   --font-family: "Inter";
   --font-family-header: "Inter";
+  --bg-gradient: linear-gradient(
+      rgba(255, 203, 235, 0.6) 19.24%,
+      rgba(209, 205, 255, 0.4) 40.6%,
+      rgba(179, 227, 255, 0.6) 58.49%
+    );
 }
 
 html,
 body {
   font-family: "Inter", sans-serif;
-  /* Gradient */
-  background: linear-gradient(
-      rgba(255, 203, 235, 0.6) 19.24%,
-      rgba(209, 205, 255, 0.4) 40.6%,
-      rgba(179, 227, 255, 0.6) 58.49%
-    );
+  /* Use gradient background */
+  background: var(--bg-gradient);
   margin: 0;
 }
 
@@ -35,22 +43,22 @@ body {
 
 a {
   text-decoration: none;
-  color: #22a8f5;
+  color: var(--color-text-link);
   font-weight: 600;
   transition: 0.2s;
 }
 
 a:hover {
-  color: #028fe0;
+  color: var(--color-text-link-hover);
   transition: 0.2s;
-}
-
-.footer a:hover {
-  background: var(--color-primary);
 }
 
 .footer .links {
   white-space: nowrap;
+}
+
+.name {
+  color: var(--color-text-name);
 }
 
 .wrapper {
@@ -73,7 +81,7 @@ a:hover {
   font-weight: bold;
   font-size: 1.8rem;
   text-align: left;
-  color: #789eff;
+  color: var(--color-text-title);
   margin-bottom: 0;
 }
 
@@ -99,7 +107,7 @@ input {
   font-size: 1rem;
   font-weight: 400;
   font-style: normal;
-  color: #4679fb;
+  color: var(--color-text-body);
   line-height: 1.5rem;
 }
 
@@ -139,6 +147,25 @@ input {
 }
 
 #byline {
-  color: #789eff;
+  color: var(--color-text-title);
   font-size: 75%;
+}
+
+#typing {
+  border-right: 2px solid var(--color-medium-green);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: var(--color-medium-green); }
+  51%, 100% { border-color: transparent; }
+}
+
+#typing {
+  animation: blink 0.8s infinite;
+}
+
+@keyframes fadeOutCursor {
+  to { border-color: transparent; }
 }
