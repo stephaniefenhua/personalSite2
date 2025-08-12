@@ -58,18 +58,18 @@
         <div class="main-text">
           <div>
             <h1 class="title">
-              hello! i'm <span style="color: #3c6dec"> steph</span> 👩🏻‍💻👋🏻
-            </h1>
+            <span id="typing"></span>
+          </h1>
           </div>
           <p class="body-paragraph">
-            i study computer science at
-            berkeley.
+            i'm a software engineer in nyc.
           </p>
           <p class="body-paragraph">
             more about me:
           </p>
   
           <ul class="body-paragraph">
+              <li>graduated from berkeley cs</li>
               <li>previously at meta, figma, snap, datadog</li>
               <li>lived in the bay area, seattle, nyc</li>
               <li><a href="https://neo.com/scholars" target="_blank">neo scholar</a>,
@@ -99,9 +99,30 @@
               resume ↗</a
             >
           </p>
-          <p id="byline">made by stephanie su</p>
+          <!-- <p id="byline">made by stephanie su</p> -->
         </div>
       </div>
     </div>
   </body>
 </html>
+
+<script>
+  const text = "hello! i'm steph.";
+  const typingElement = document.getElementById("typing");
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      typingElement.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, 100);
+    } else {
+      setTimeout(() => {
+        typingElement.style.animation = "fadeOutCursor 0.8s forwards";
+      }, 1500);
+    }
+  }
+  window.addEventListener("load", () => {
+    setTimeout(type, 300); 
+  });
+</script>
