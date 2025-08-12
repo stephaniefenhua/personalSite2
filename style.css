@@ -25,8 +25,7 @@
 html,
 body {
   font-family: "Inter", sans-serif;
-  /* Use gradient background */
-  background: var(--bg-gradient);
+  background: var(--color-off-white);
   margin: 0;
 }
 
