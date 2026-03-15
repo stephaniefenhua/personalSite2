@@ -1,0 +1,49 @@
+{
+  "shared": {
+    "siteName": "stephanie su",
+    "byline": "made by stephanie su"
+  },
+  "meta": {
+    "title": "stephanie su",
+    "description": "hello! i'm steph, a software engineer based in nyc.",
+    "favicon": "/favicon.png",
+    "ogType": "article",
+    "author": "stephanie su",
+    "twitterCard": "summary"
+  },
+  "home": {
+    "typingText": "hello! i'm steph.",
+    "intro": "i'm a software engineer in nyc. i work on media publishing infra at instagram.",
+    "moreAboutMe": "more about me:",
+    "listItems": [
+      "graduated from berkeley cs",
+      "previously interned at meta, figma, snap, datadog",
+      "lived in the bay area, seattle, nyc",
+      {
+        "html": [
+          "<a href=\"https://neo.com/scholars\" target=\"_blank\">neo scholar</a>, ",
+          "<a href=\"https://eecs.berkeley.edu/resources/undergrads/accel\" target=\"_blank\">accel scholar</a>, ",
+          "<a href=\"https://fellows.kleinerperkins.com/\" target=\"_blank\">kp fellow</a>"
+        ]
+      },
+      {
+        "html": [
+          "scaled <a href=\"https://superposition.tech/\" target=\"_blank\">superposition</a> ",
+          "to 120 global chapters"
+        ]
+      },
+      "interested in community building, dev tools, recruiting",
+      "love food, crosswords, sudoku, matcha, miffy"
+    ],
+    "contactLinks": [
+      {
+        "label": "email ↗",
+        "href": "mailto:stephsu@berkeley.edu"
+      },
+      {
+        "label": "linkedin ↗",
+        "href": "https://www.linkedin.com/in/steph-su/"
+      }
+    ]
+  }
+}

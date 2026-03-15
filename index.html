@@ -3,40 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      href="https://cdn.glitch.com/72a03f1d-ebef-49e9-95f5-7b6c184d2530%2FFavicon.png?v=1615359827413"
-    />
+    <link rel="icon" id="favicon" href="/favicon.png" />
 
     <title>Stephanie Su</title>
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta name="twitter:card" content="" />
 
-    <!-- Meta tags for SEO and social sharing -->
-    <meta property="og:title" content="Stephanie Su" />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:description"
-      content="Hello! I'm Steph, a software engineer based in NYC."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.com/72a03f1d-ebef-49e9-95f5-7b6c184d2530%2FFavicon.png?v=1615359827413"
-    />
-    <meta name="author" content="Stephanie Su" />
-    <meta
-      name="description"
-      content="Hello! I'm Steph, a software engineer based in NYC."
-    />
-    <meta name="twitter:card" content="summary" />
-
-    <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <script src="content.js"></script>
+    <script src="typing.js"></script>
 
-    <!-- Import Inter font -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
-    </style>
-
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H1K8QYFCV5"
@@ -52,77 +33,17 @@
     </script>
   </head>
   <body>
-    <!-- The wrapper and content divs set margins and positioning -->
     <div class="wrapper">
       <div class="content" role="main">
         <div class="main-text">
-          <div>
-            <h1 class="title">
-            <span id="typing"></span>
-          </h1>
-          </div>
-          <p class="body-paragraph">
-            i'm a software engineer in nyc. i build client-side infra for publishing media all over instagram.
-          </p>
-          <p class="body-paragraph">
-            more about me:
-          </p>
-  
-          <ul class="body-paragraph">
-              <li>graduated from berkeley cs</li>
-              <li>previously interned at meta, figma, snap, datadog</li>
-              <li>lived in the bay area, seattle, nyc</li>
-              <li><a href="https://neo.com/scholars" target="_blank">neo scholar</a>,
-            <a
-              href="https://eecs.berkeley.edu/resources/undergrads/accel"
-              target="_blank"
-              >accel scholar</a
-            >,
-            <a href="https://fellows.kleinerperkins.com/" target="_blank"
-              >kp fellow</a
-            ></li>
-              <li>scaled             <a href="https://superposition.tech/" target="_blank"
-              >superposition</a
-            > to 120 global chapters</li>
-            <li>interested in community building, dev tools, recruiting</li>
-            <li>love food, crosswords, sudoku, matcha </li>
-          </ul>
-
-          <p class="body-paragraph" style="color: #22a8f5">
-            <a href="mailto:stephsu@berkeley.edu" target="_blank">email ↗</a>
-            <a href="https://www.linkedin.com/in/steph-su/" target="_blank"
-              >linkedin ↗</a
-            ><a
-              href="/resume"
-              target="_blank"
-            >
-              resume ↗</a
-            >
-          </p>
-          <p id="byline">made by stephanie su</p>
+          <h1 class="title"><span id="typing" data-content="home.typingText"></span></h1>
+          <p class="body-paragraph" data-content="home.intro"></p>
+          <p class="body-paragraph" data-content="home.moreAboutMe"></p>
+          <ul class="body-paragraph" data-content-list="home.listItems"></ul>
+          <p class="body-paragraph contact-links" data-content-links="home.contactLinks"></p>
+          <p id="byline" data-content="shared.byline"></p>
         </div>
       </div>
     </div>
   </body>
-
-<script>
-  const text = "hello! i'm steph.";
-  const typingElement = document.getElementById("typing");
-  let i = 0;
-
-  function type() {
-    if (i < text.length) {
-      typingElement.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, 100);
-    } else {
-      setTimeout(() => {
-        typingElement.style.animation = "fadeOutCursor 0.8s forwards";
-      }, 1500);
-    }
-  }
-  window.addEventListener("load", () => {
-    setTimeout(type, 300); 
-  });
-</script>
 </html>
