@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
-/* Variables */
+/* Variables – soft mint palette */
 :root {
-  --color-off-white: #e0efe5;
-  --color-medium-green: #218c4d;
-  --color-dark-green: #0e6d36;
+  --color-off-white: #e8faf0;
+  --color-medium-green: #3d9b72;
+  --color-dark-green: #2a7d5c;
+  --color-contact-link: #4db8a8;
   --color-text-title: var(--color-medium-green);
   --color-text-body: var(--color-medium-green);
   --color-text-name: var(--color-dark-green);
@@ -33,7 +34,7 @@ a:hover {
 }
 
 .contact-links {
-  color: #22a8f5;
+  color: var(--color-contact-link);
 }
 
 /* Layout */
@@ -150,7 +151,7 @@ a:hover {
 
 .job-card {
   padding: 1rem 0 0.75rem;
-  border-bottom: 1px solid rgba(33, 140, 77, 0.2);
+  border-bottom: 1px solid rgba(61, 155, 114, 0.25);
 }
 
 .job-card:last-of-type {
