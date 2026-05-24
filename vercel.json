@@ -1,1 +1,9 @@
-{}
+{
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "/Stephanie_Su_Resume.pdf",
+      "permanent": false
+    }
+  ]
+}

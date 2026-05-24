@@ -43,6 +43,11 @@
       {
         "label": "linkedin ↗",
         "href": "https://www.linkedin.com/in/steph-su/"
+      },
+      {
+        "label": "resume ↗",
+        "href": "/resume",
+        "target": "_blank"
       }
     ]
   }
