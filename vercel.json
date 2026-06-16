@@ -1,4 +1,5 @@
 {
+  "buildCommand": "node scripts/inject-analytics.js",
   "redirects": [
     {
       "source": "/resume",
